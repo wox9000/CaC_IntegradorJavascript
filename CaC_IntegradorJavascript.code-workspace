@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../testFrontEnd/TP-Integrador-Codo-a-Codo-master"
+		},
+		{
+			"path": "../testFrontEnd/TestJavascript-Boostrap"
 		}
 	],
 	"settings": {
