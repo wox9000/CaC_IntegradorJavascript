@@ -1,0 +1,114 @@
+:root {
+    --brillo-img: 45%;
+}
+
+/* "Oscurece" la imágen */
+.polarizar-img {
+    filter: brightness(var(--brillo-img));
+    -moz-filter: brightness(var(--brillo-img));
+    -o-filter: brightness(var(--brillo-img));
+    -webkit-filter: brightness(var(--brillo-img));
+}
+
+.baires-bg {
+    background-image: url('../assets/images/sm/ba1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.obelisco-bg {
+    background-image: url('../assets/images/sm/ba3.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#el-lugar-y-la-fecha {
+    border: none !important;
+}
+
+#el-lugar-y-la-fecha img {
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(90deg, #1c3643, #1e5372);
+}
+
+@media (max-height: 576px) {
+    #la-conferencia .carousel-caption {
+        top: 20%;
+        bottom: 5%;
+    }
+
+    #la-conferencia .carousel-caption p {
+        padding-right: 1rem;
+        max-height: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    #la-conferencia .carousel-caption {
+        width: 50%;
+        top: 40%;
+    }
+
+    .baires-bg {
+        background-image: url('../assets/images/md/ba1.jpg');
+    }
+
+    .obelisco-bg {
+        background-image: url('../assets/images/md/ba3.jpg');
+    }
+}
+
+@media (min-width: 992px) {
+    .baires-bg {
+        background-image: url('../assets/images/lg/ba1.jpg');
+    }
+
+    .obelisco-bg {
+        background-image: url('../assets/images/lg/ba3.jpg');
+    }
+
+    #conviertete-en-orador form {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .baires-bg {
+        background-image: url('../assets/images/xl/ba1.jpg');
+    }
+
+    .obelisco-bg {
+        background-image: url('../assets/images/xl/ba3.jpg');
+    }
+
+    #conviertete-en-orador form {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .baires-bg {
+        background-image: url('../assets/images/xxl/ba1.jpg');
+    }
+
+    .obelisco-bg {
+        background-image: url('../assets/images/xxl/ba3.jpg');
+    }
+
+    #conviertete-en-orador form {
+        max-width: 50%;
+    }
+}

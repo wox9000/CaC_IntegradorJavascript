@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../testFrontEnd/victorManuelMarquez.github.io-main"
+		},
+		{
+			"path": "../testFrontEnd/TP-Integrador-Codo-a-Codo-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CaC_IntegradorJavascript"
+	}
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As - Comprar Tickets</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="mt-2 pt-5">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="../assets/images/codoacodo.png" alt="cac logo" width="64" height="30" class="d-inline-block align-text-top">
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarMenu" aria-controls="navBarMenu" aria-expanded="false" aria-label="Desplegar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navBarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#la-conferencia">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#los-oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#el-lugar-y-la-fecha">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#conviertete-en-orador">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="comprar-tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container" style="max-width: 900px;">
+        <div class="container py-3">
+            <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+                <div class="col">
+                    <div class="card border-primary">
+                        <div class="card-header text-bg-primary">
+                            <h4 class="my-0 py-1 fw-normal">Estudiante</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Tienen un descuento de</li>
+                                <li><h4 class="p-3">80%</h4></li>
+                                <li><small class="text-body-secondary fw-light">* presentar documentación</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-info">
+                        <div class="card-header text-bg-info">
+                            <h4 class="my-0 py-1 fw-normal">Trainee</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Tienen un descuento de</li>
+                                <li><h4 class="p-3">50%</h4></li>
+                                <li><small class="text-body-secondary fw-light">* presentar documentación</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning">
+                        <div class="card-header text-bg-warning">
+                            <h4 class="my-0 py-1 fw-normal text-white">Junior</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Tienen un descuento de</li>
+                                <li><h4 class="p-3">15%</h4></li>
+                                <li><small class="text-body-secondary fw-light">* presentar documentación</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="formulario" action="" class="container needs-validation" novalidate>
+            <legend class="fw-normal fs-5 text-center">VENTA</legend>
+            <h1 class="text-center">VALOR DE TICKET $200</h1>
+            <fieldset>
+                <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" id="nombreCliente" required>
+                        <div class="invalid-feedback">Ingrese un nombre válido!</div>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" id="apellidoCliente" required>
+                        <div class="invalid-feedback">Ingrese un apellido válido!</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Correo" id="correoCliente" required>
+                    <div class="invalid-feedback">Se requiere de un correo electrónico!</div>
+                </div>
+            </fieldset>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="categorias" class="form-label">Categoría</label>
+                    <select name="" id="categorias" class="form-select text-secondary" required>
+                        <option value="">Seleccione...</option>
+                    </select>
+                </div>
+            </div>
+            <div id="carrito"></div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text border-primary" style="background-color: var(--bs-primary-bg-subtle);">Total a Pagar:</span>
+                    <span class="input-group-text border-primary" id="total">0.00</span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="row row-cols-1 row-cols-sm-2 g-3">
+                    <div class="col">
+                        <button class="btn w-100 text-white" style="background-color: #97c93e;" type="reset">Borrar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn w-100 text-white" style="background-color: #97c93e;" type="submit">Resumen</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-xl text-center">
+            <div class="container justify-content-center">
+                <ul class="navbar-nav align-items-center justify-content-evently">
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Contáctanos</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Prensa</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Conferencias</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Términos y condiciones</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Privacidad</a>
+                    </li>
+                    <li class="nav-item px-4 py-2">
+                        <a class="nav-link text-white" href="">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- MI LÓGICA -->
+    <script src="../js/tickets.js"></script>
+</body>
+</html>
